@@ -431,6 +431,41 @@ main{
     .button{
         height: 3.5rem;
     }
+
+    /*------------------- scroll bar style -------------------*/
+
+    ::-webkit-scrollbar {
+        width: 6px; /* Largura do scroll */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: hsla(0, 0%, 50%, 0.5);
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: hsla(0, 0%, 50%, 0.7);
+    }
+
+    ::-webkit-scrollbar-track {
+        background: hsla(0, 0%, 20%, 0.5);
+    }
+
+    ::-webkit-scrollbar-thumb:vertical {
+        min-height: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb:horizontal {
+        min-width: 20px;
+    }
+
+    ::-webkit-scrollbar-track:vertical {
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-track:horizontal {
+        border-radius: 3px;
+    }
 }
 
 /* ---------------------------------------------- 1024px X 850px -----------------------------------------*/
