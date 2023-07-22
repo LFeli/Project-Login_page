@@ -37,10 +37,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
-a{
     text-decoration: none;
+
 }
 
 
@@ -219,8 +218,12 @@ input{
     transition: var(--transition-time);
 }
 
-.sing-ups .button img{
-    margin-right: 2rem;
+.sing-ups .button svg{
+    width:  20px;
+    height: 20px;
+    background-repeat: 100%;
+    object-fit: cover;
+    margin-right: 1rem;
 }
 
 
@@ -244,6 +247,7 @@ input{
 .footer a:hover{
     color: var(--calling-color);
     transition: var(--transition-time);
+    text-decoration: underline;
 }
 /*------------------- Footer -------------------*/
 
@@ -290,6 +294,7 @@ input{
 
     /*--------- Texts ---------*/
 
+
     .calling{
         font: 700 var(--font-size-32) var(--font-main);
     }
@@ -332,12 +337,18 @@ input{
 
     .content{
         margin: 0 auto;
-        width: 500px;
+        width: 587px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     /* ------- Texts -------- */
-    .calling{
-        margin-top: 18%;
+    .texts{
+        width: 587px;
     }
 
     /* ------- Logo -------- */
@@ -349,6 +360,22 @@ input{
         z-index: 100;
 
         padding: 2rem 3.25rem 0 0 ;
+    }
+
+    /*--------- Form ---------*/
+
+    .input-field input{
+        width: 587px;
+    }
+
+    .button{
+        width: 587px;
+    }
+
+    /*------------------- Sing up -------------------*/
+
+    .sing-up{
+        width: 587px;
     }
 
     /* ------- Image -------- */
