@@ -148,7 +148,7 @@ main{
 .input-field{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    /* gap: 1rem; */
 
     margin-top: 2rem;
 }
@@ -160,6 +160,7 @@ main{
     border-radius: 8px;
     border: none;
     padding: 0 1rem 0 1.5rem ;
+    margin: 1rem 0 0.5rem 0;
 
     background-color: var(--input-color);
     color: var(--text-color);
@@ -186,6 +187,47 @@ main{
 .input-field > .texts-wrapper{
     display: flex;
     justify-content: space-between;
+}
+
+/*------------------- Error  -------------------*/
+.erro-box{
+    display: none;
+
+    transition: var(--transition-time) ease;
+}
+
+.erro-box::before{
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    display: block;
+
+    background-image: url(./assets/icons/icon-x-circle.svg);
+}
+
+/* Erro visible */
+.input-field.error-visible input{
+    outline: 2px solid #9E0000;
+}
+
+.input-field.error-visible input::placeholder{
+    color: #9E0000;
+}
+
+.input-field.error-visible .erro-box{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: #9E0000;
+
+    font-size: 16px;
+
+    transition: var(--transition-time) ease;
+}
+
+.input-field.error-visible input:focus{
+    transition: 1ms ease;
 }
 /*------------------- Sing up -------------------*/
 
@@ -260,6 +302,7 @@ main{
 
 /*------------------- shared styles -------------------*/
 .input-field input:hover, 
+.input-field input:focus,
 .sing-ups .button:hover{
     background-color: var(--input-hover-color);
     transition: var(--transition-time);

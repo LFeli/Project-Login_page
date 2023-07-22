@@ -33,7 +33,10 @@
     
                             <div class="input-field">
                                 <label for="email" class="label">Email Address</label>
-                                <input type="email" name="email" id="email" placeholder="Your Email Address Here" required pattern="^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$">
+                                <input type="email" name="email" id="email" placeholder="Your Email Address Here" pattern="^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$">
+                                <div class="erro-box">
+                                    <p>Error Message</p>
+                                </div>
                             </div>
     
                             <div class="input-field">
@@ -42,7 +45,10 @@
                                     <a href="#">Forgot Password?</a>
                                 </div>
     
-                                <input type="password" name="password" id="password" placeholder="******************" required>
+                                <input type="password" name="password" id="password" placeholder="******************">
+                                <div class="erro-box">
+                                    <p>Error Message</p>
+                                </div>
                             </div>
     
                             <button type="submit" class="button">Login</button>
@@ -76,6 +82,8 @@
                 <div class="image"></div>
             </div>
     </main>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
