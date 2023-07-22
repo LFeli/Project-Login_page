@@ -180,18 +180,19 @@ input{
 }
 
 
-.input-field:nth-child(2) label{
+.input-field > .texts-wrapper{
     display: flex;
     justify-content: space-between;
 }
 
-.input-field label a{
+.texts-wrapper a, .sing-up a{
     color: var(--primary);
+    transition: var(--transition-time) ease;
 }
 
-.input-field label a:hover{
+.texts-wrapper a:hover, .sing-up a:hover{
     color: var(--primary-hover);
-    transition: var(--transition-time);
+    transition: var(--transition-time) ease;
 }
 
 /*------------------- Sing up -------------------*/
@@ -208,14 +209,7 @@ input{
 
 .sing-up a{
     margin-left: 6px;
-
-    color: var(--primary);
 }
-
-.sing-up a:hover{
-    color: var(--primary-hover);
-}
-
 
 .sing-ups .button{
     display: flex;
