@@ -83,11 +83,12 @@ main{
     font: 400 var(--font-size-small) var(--font-main);
 
     cursor: pointer;
+    transition: var(--transition-time) ease;
 }
 
 .button:hover{
     background-color: var(--primary-hover);
-    transition: var(--transition-time);
+    transition: var(--transition-time) ease;
 }
 
 /*------------------------- Logo ------------------------- */
@@ -110,7 +111,16 @@ main{
     background-color: var(--Logo-color);
     border-radius: 8px;
     
+    color: var(--placeholder-color-color);
+
+    transition: var(--transition-time) ease-in-out;
+}
+
+.logo:hover{
+    background-color: #002A3E;
     color: var(--text-color);
+
+    transition: all var(--transition-time) ease-in-out;
 }
 
 /*------------------------- Texts ------------------------- */
@@ -159,12 +169,14 @@ input{
 .input-field input::placeholder{
     color: var(--placeholder-color);
     font: 400 var(--font-size-16) var(--font-main);
+
+    transition: var(--transition-time) ease;
 }
 
 
 .input-field input:hover::placeholder{
     color: var(--calling-color);
-    transition: var(--transition-time);
+    transition: var(--transition-time) ease;
 }
 
 
