@@ -245,7 +245,7 @@ input{
     padding: 2rem 0 1rem 0;
 
     color: var(--placeholder-color);
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-12);
 }
 
 .footer a{
@@ -337,26 +337,20 @@ input{
 
     .container{
         height: 100vh;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
         margin: 0;
     }
 
-    .content{
+    .wrapper-content{
+        width: 100%;
+
         margin: 0 auto;
-        width: 587px;
+        overflow: auto;
 
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        margin-top: 20px;
-    }
-
-    /* ------- Texts -------- */
-    .texts{
-        width: 587px;
     }
 
     /* ------- Logo -------- */
@@ -370,33 +364,37 @@ input{
         padding: 2rem 3.25rem 0 0 ;
     }
 
-    /*--------- Form ---------*/
-
-    .input-field input{
-        width: 587px;
-    }
-
-    .button{
-        width: 587px;
-    }
-
-    /*------------------- Sing up -------------------*/
-
-    .sing-up{
-        width: 587px;
-    }
-
     /* ------- Image -------- */
     .image{
         display: block;
 
-        width: 50%;
         height: 100vh;
         background-image: url(./assets/photos/Login-image.webp);
         background-size: cover;
         background-position-x: 50%;
         background-repeat: no-repeat;
-        /* background-color: red; */
     }
 
+
+    /*------------------- Base & Form -------------------*/
+
+    .input-field input, .button{
+        height: 3.5rem;
+    }
+}
+
+/* ---------------------------------------------- 1024px X 850px -----------------------------------------*/
+
+@media(min-width: 1024px) and (min-height: 850px){
+    /* ------- Base -------- */
+
+    .wrapper-content{
+        align-items: center;
+    }
+
+    /*--------- Texts ---------*/
+
+    .calling{
+        margin-top: 0;
+    }
 }
