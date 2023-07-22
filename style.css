@@ -16,12 +16,14 @@
 
     --background-color: hsla(0, 0%, 12%, 1);
     --input-color: hsla(0, 0%, 32%, 1);
+    --input-hover-color: hsla(0, 0%, 22%, 1);
     --Logo-color: hsla(0, 0%, 34%, 0.35);
     --calling-color: hsla(0, 0%, 98%, 1);
     --text-color: hsla(0, 0%, 87%, 1);
     --placeholder-color: hsla(0, 0%, 87%, 0.75);
     --primary: hsla(213, 78%, 57%, 1);
     --primary-hover: hsla(213, 75%, 43%, 1);
+    --primary-alternative: hsla(199, 100%, 12%, 1);
 
 
     /* Other variables */
@@ -102,8 +104,8 @@ main{
 }
 
 .logo{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 
     display: flex;
     align-items: center;
@@ -118,7 +120,7 @@ main{
 }
 
 .logo:hover{
-    background-color: #002A3E;
+    background-color: var(--primary-alternative);
     color: var(--text-color);
 
     transition: all var(--transition-time) ease-in-out;
@@ -143,12 +145,6 @@ main{
 
 /*------------------- Form -------------------*/
 
-input{
-    color: var(--text-color);
-    
-    padding: 0 1rem 0 1.5rem ;
-}
-
 .input-field{
     display: flex;
     flex-direction: column;
@@ -163,8 +159,14 @@ input{
 
     border-radius: 8px;
     border: none;
+    padding: 0 1rem 0 1.5rem ;
+
     background-color: var(--input-color);
+    color: var(--text-color);
+
     font: 400 var(--font-size-16) var(--font-main);
+
+    transition: var(--transition-time) ease;
 }
 
 .input-field input::placeholder{
@@ -185,17 +187,6 @@ input{
     display: flex;
     justify-content: space-between;
 }
-
-.texts-wrapper a, .sing-up a{
-    color: var(--primary);
-    transition: var(--transition-time) ease;
-}
-
-.texts-wrapper a:hover, .sing-up a:hover{
-    color: var(--primary-hover);
-    transition: var(--transition-time) ease;
-}
-
 /*------------------- Sing up -------------------*/
 
 
@@ -220,10 +211,7 @@ input{
     background-color: var(--input-color);
 }
 
-.sing-ups .button:hover{
-    background-color: #636363;
-    transition: var(--transition-time);
-}
+
 
 .sing-ups .button svg{
     width:  20px;
@@ -257,7 +245,7 @@ input{
     transition: var(--transition-time);
     text-decoration: underline;
 }
-/*------------------- Footer -------------------*/
+/*------------------- Footer with 870px -------------------*/
 
 @media (min-height: 870px){
     .footer{
@@ -270,7 +258,24 @@ input{
     }
 }
 
+/*------------------- shared styles -------------------*/
+.input-field input:hover, 
+.sing-ups .button:hover{
+    background-color: var(--input-hover-color);
+    transition: var(--transition-time);
+}
 
+.texts-wrapper a, 
+.sing-up a{
+    color: var(--primary);
+    transition: var(--transition-time) ease;
+}
+
+.texts-wrapper a:hover, 
+.sing-up a:hover{
+    color: var(--primary-hover);
+    transition: var(--transition-time) ease;
+}
 
 /* ---------------------------------------------- 768px -------------------------------------------*/
 @media (min-width: 768px){
@@ -325,7 +330,8 @@ input{
     }
 
     /*--------- Footer ---------*/
-    .footer span, .footer a{
+    .footer span, 
+    .footer a{
         font-size: var(--font-size-16);
     }
 }
@@ -376,9 +382,10 @@ input{
     }
 
 
-    /*------------------- Base & Form -------------------*/
+    /*------------------- shared styles -------------------*/
 
-    .input-field input, .button{
+    .input-field input, 
+    .button{
         height: 3.5rem;
     }
 }
