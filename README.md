@@ -7,13 +7,14 @@ Com a utilização das tecnologias HTML5, CSS3 e JavaScript, desenvolvi uma pág
 
 No desenvolvimento acabei utilizando os medias querys para deixar o layout responsivos, assim sendo possível utilizar desde um desktop ao mobile, além disso fiz um pequeno tratamento de dados no formulário via Javascript.
 
-Sobre o design comecei esboçando wireframes à moda antiga mesmo, com papel e caneta, para visualizar o layout. Em seguida, trabalhei no modelo de baixa fidelidade, onde cada elemento começou a tomar forma. E, por fim, criei o modelo de alta fidelidade, refinando cada pixel e polindo os detalhes até atingir o nível de excelência que almejava.
+Sobre o design comecei esboçando wireframes à moda antiga mesmo, com papel e caneta, para visualizar o layout. Em seguida, trabalhei no modelo de baixa fidelidade, onde cada elemento começou a tomar forma. E, por fim, criei o modelo de alta fidelidade, refinando cada parte e polindo os detalhes até atingir o nível de excelência que eu desejava.
 
 ## Recursos 🤔
 - Página de login com design moderno e responsivo.
 - Validação de formulário em tempo real usando JavaScript.
 - Uma experiência de usuário fluida e intuitiva.  
 <br>
+
 ![Screenshot da Página de Login](./assets/photos/screencapture-lfeli-github-io-Project-Login-page-2023-07-22-18_48_39.png)
 
 ## Como Usar 👨🏻‍💻
