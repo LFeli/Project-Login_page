@@ -3,9 +3,11 @@
 ## Descrição ✏️
 Bem-vindo ao meu projeto de Login Page, aventura que marcou o início da minha trajetória no mundo do desenvolvimento web! Este projeto é realmente especial para mim, pois representa um marco importante, sendo uma das minhas primeiras experiências completas, desde o design até a implementação do código.
 
-Com habilidade no uso das tecnologias HTML5, CSS3 e JavaScript, desenvolvi uma página de login excepcional, que combina funcionalidade e um design moderno e atrativo.
+Com a utilização das tecnologias HTML5, CSS3 e JavaScript, desenvolvi uma página de login excepcional, que combina funcionalidade e um design moderno e atrativo.
 
-O processo foi cheio de aprendizado e desafios. Comecei esboçando wireframes à moda antiga, com papel e caneta, para visualizar o layout. Em seguida, trabalhei no modelo de baixa fidelidade, onde cada elemento começou a ganhar vida. Foi uma etapa crucial para moldar a aparência geral do projeto. E, por fim, criei o modelo de alta fidelidade, refinando cada pixel e polindo os detalhes até atingir o nível de excelência que almejava.
+No desenvolvimento acabei utilizando os medias querys para deixar o layout responsivos, assim sendo possível utilizar desde um desktop ao mobile, além disso fiz um pequeno tratamento de dados no formulário via Javascript.
+
+Sobre o design comecei esboçando wireframes à moda antiga mesmo, com papel e caneta, para visualizar o layout. Em seguida, trabalhei no modelo de baixa fidelidade, onde cada elemento começou a tomar forma. E, por fim, criei o modelo de alta fidelidade, refinando cada pixel e polindo os detalhes até atingir o nível de excelência que almejava.
 
 ## Recursos 🤔
 - Página de login com design moderno e responsivo.
